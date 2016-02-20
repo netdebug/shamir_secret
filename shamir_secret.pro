@@ -11,8 +11,10 @@ TEMPLATE = app
 
 SOURCES += main.cpp \
     create_secret.cpp \
-    recovery_secret.cpp
+    recovery_secret.cpp \
+    simple_number.cpp
 
 HEADERS += \
     create_secret.h \
-    recovery_secret.h
+    recovery_secret.h \
+    simple_number.h

@@ -25,12 +25,12 @@ double recovery_secret::lagrange(double x, double *masX, double *masY, int size)
             l_temp *= (x - masX[j]) / (masX[i] - masX[j]);
         }
 
-        l_temp = ((int)l_temp)%p;
+        //l_temp = ((int)l_temp)%p;
         lagr += l_temp * masY[i];
     }
 
-    return ((int)lagr)%p;
-    //return lagr;
+    //return ((int)lagr)%p;
+    return lagr;
 }
 
 void recovery_secret::init(int p)

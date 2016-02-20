@@ -29,7 +29,7 @@ int create_secret::getKey(int x)
         f_x += pow(x, i) * a[i - 1];
     }
     f_x += M;
-    f_x = f_x % p;
+    //f_x = f_x % p;
 
     return f_x;
 }
